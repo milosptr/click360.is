@@ -1,20 +1,17 @@
-title: uBuild Design Blocks
-author: Forestry.io
-email: support@forestry.io
-description: >-
-  ubuild-jekyll is a Jekyll theme desgined to work with Forestry's Blocks feature.
-  This theme provides a set of page-level components and a pre-configured Forestry Blocks UI
-  that will empower content editors to construct their own webpages.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # your site's origin, e.g. https://forestry.io
-
-# Build settings
+---
+title: Click 360
+author: milosptr.dev
+email: milosptr@icloud.com
+description: Let us take you for a tour across the most realistic 360° views. Become
+  exceptional in your business using our services. Take a look at our latest virtual
+  tours here.
+baseurl: ''
+url: ''
 defaults:
-  - scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default" # this ensures all content renders with layouts/default.html
-
+- scope:
+    path: ''
+  values:
+    layout: default
 plugins:
-  - jekyll-feed
-  - jekyll-menus
+- jekyll-feed
+- jekyll-menus
