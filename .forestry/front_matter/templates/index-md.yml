@@ -1,4 +1,137 @@
 ---
 label: index.md
 hide_body: true
-fields: []
+fields:
+- name: big_title
+  type: text
+  config:
+    required: true
+  label: Big Title
+  default: Let us take you for  a tour across the most  realistic 360° views
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  hidden: true
+  default: homepage
+- name: virtual_tours_title
+  type: text
+  config:
+    required: false
+  label: Virtual Tours Title
+  default: 'Become exceptional in your  business using our services. '
+- name: virtual_tours_subtitle
+  type: textarea
+  default: Take a look at our latest virtual tours here.
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Virtual Tours Subtitle
+- name: tours_button_url
+  type: text
+  config:
+    required: false
+  label: Tours button URL
+  default: "#"
+- name: 4_representative_virtual_tours
+  type: field_group_list
+  fields:
+  - name: tour_url
+    type: text
+    config:
+      required: false
+    label: Tour URL
+  config:
+    min: 2
+    max: 4
+    labelField: 
+  label: 4 Representative Virtual Tours
+- name: about_camera_title
+  type: text
+  config:
+    required: false
+  label: About Camera Title
+  default: Be innovative and smarter  with digital 3D technology.
+- name: camera_description
+  type: textarea
+  default: "High-resolution 3D scan brings the real estate   \nto the viewer from
+    a completely different perspectives.   \n  \nTake a first look from the comfort
+    of   \nyour own place, in your own time.  \n  \nYou allow potential customers
+    to explore   \nyour property any time – day or night.  \n  \nIdeal to present
+    your restaurant, hotel, venue,   \ncompany, gallery or simply any type of operation."
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Camera Description
+- name: camera_img_right
+  type: file
+  config:
+    maxSize: 64
+  label: Camera img Right
+- name: camera_cta_section
+  type: field_group
+  config: {}
+  fields:
+  - name: cta_title
+    type: text
+    config:
+      required: false
+    label: CTA Title
+    default: The gold standard for professional 3D capture
+  - name: cta_button_text
+    type: text
+    config:
+      required: false
+    label: CTA button text
+    default: About Camera
+  - name: button_url
+    type: text
+    config:
+      required: false
+    label: Button URL
+    default: "#"
+  label: Camera CTA section
+- name: testimonial_title
+  type: text
+  config:
+    required: false
+  label: Testimonial title
+  default: What our clients said about our services?
+- name: testimonials
+  type: field_group_list
+  fields:
+  - name: testimonial_content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Testimonial content
+  - name: testimonial_logo
+    type: file
+    config:
+      maxSize: 64
+    label: Testimonial logo
+  - name: testimonial_name
+    type: text
+    config:
+      required: false
+    label: Testimonial name
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Testimonials
+- name: contact_title
+  type: text
+  config:
+    required: false
+  label: Contact title
+  default: How can we help you?
