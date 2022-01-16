@@ -6,12 +6,17 @@ description: Let us take you for a tour across the most realistic 360° views. B
   exceptional in your business using our services. Take a look at our latest virtual
   tours here.
 baseurl: ''
-url: ''
+permalink: "/:path/"
 defaults:
-- scope:
-    path: ''
-  values:
-    layout: default
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 plugins:
 - jekyll-feed
 - jekyll-menus
